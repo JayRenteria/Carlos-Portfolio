@@ -1,3 +1,11 @@
+<?php
+
+/*
+Template Name: Contact Me
+*/
+
+?>
+
 <?php get_header(); ?>
 
 <div class="container-fluid" id="contact_section">
