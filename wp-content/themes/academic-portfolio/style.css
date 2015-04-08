@@ -110,9 +110,9 @@ img {
  * Footer
  ************************************/
 footer {
-  background-color: black;
-  color: white;
-  height: 60px;
+  background-color: black !important;
+  color: white !important;
+  height: 30px;
 }
 
 /************************************

@@ -10,18 +10,18 @@ Template Name: Contact Me
 
 <div class="container-fluid" id="contact_section">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12 mt60 mb60">
 			<h2>Contact me</h2>
 		</div>
 	</div><!-- end row -->
 </div><!-- end container-fluid -->
 
-<div id="contact_form">
+<div class="mb120" id="contact_form">
 	<form class="form-horizontal" role="form" id="controller" action="<?php echo get_template_directory_uri();?>/index-controller.php" method="post">
 		<div class="container-fluid">
 
 			<div class="row">
-				<div class="form-group mb0 mt40">
+				<div class="form-group mt40">
 					<div class="col-sm-4">
 						<input class="form-control" id="name" name="name" type="text" placeholder="Name">
 					</div>
