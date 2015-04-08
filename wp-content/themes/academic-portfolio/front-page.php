@@ -17,6 +17,7 @@
 
 	<div class="container-fluid mt80" id="portfolio_section">
 		<div class="row">
+
 			<div class="col-md-12 column">
 				<h2>Portfolio</h2>
 				<?php
