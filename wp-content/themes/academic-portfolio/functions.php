@@ -138,4 +138,7 @@ aandbae_create_widget( 'Bio Picture', 'bio-pic', '', '', '', '', 'Widget for cha
 // change bio text
 aandbae_create_widget( 'Bio Text', 'bio-text', '', '', '', '', 'Widget for changing Bio text.');
 
+// change cv text
+aandbae_create_widget( 'CV Text', 'cv-text', '', '', '', '', 'Widget for changing CV text.');
+
 ?>

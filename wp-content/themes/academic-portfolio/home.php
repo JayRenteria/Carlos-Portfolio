@@ -4,7 +4,7 @@
 	<div class="wrapper"> <!-- sticky footer stuff -->
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-4 mt60">
+				<div class="col-sm-4 mt60 hidden-xs">
 					<?php if( dynamic_sidebar('top-pic')); ?>
 				</div>
 				<div class="col-sm-8 mt60">
@@ -66,6 +66,10 @@
 					</div><!-- end col-md-8 -->
 				</div>
 			</div>
+		<div class="col-sm-4 mt60 visible-xs">
+			<?php if( dynamic_sidebar('top-pic')); ?>
+		</div>
+
 		<div class="push"></div>
 	</div>
 <?php get_footer(); ?>

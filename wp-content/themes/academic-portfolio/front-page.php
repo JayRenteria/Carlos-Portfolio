@@ -41,17 +41,9 @@
 		<div class="row">
 			<div class="col-md-12 column">
 				<h2>CV</h2>
-				<?php
-
-				if(function_exists('envira_gallery')) {
-					envira_gallery( '9' );
-
-				}
-				if (function_exists('envira_gallery')) {
-					envira_gallery('portfolio', 'slug');
-				}
-
-				?>
+				<div class="col-sm-12">
+					<?php if( dynamic_sidebar('cv-text')); ?>
+				</div>
 			</div>
 		</div><!-- end row -->
 	</div><!-- end container-fluid -->
