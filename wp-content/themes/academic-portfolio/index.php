@@ -3,9 +3,7 @@
 <div class="container-fluid" id="home_section">
 	<div class="row">
 		<div class="col-md-12">
-			<?php if( dynamic_sidebar('top-pic')); ?>
-
-			<h1>Carlos M Indacochea</h1>
+			<h1>Carlos M. Indacochea</h1>
 			<h3>Academic Portfolio</h3>
 		</div>
 	</div><!-- end row -->
@@ -13,26 +11,6 @@
 
 <div class="mt80"></div>
 
-<div class="container-fluid mt80" id="portfolio_section">
-	<div class="row">
-		<div class="col-md-12 column">
-			<h2>Portfolio</h2>
-			<?php
-
-			if(function_exists('envira_gallery')) {
-				envira_gallery( '9' );
-
-			}
-			if (function_exists('envira_gallery')) {
-				envira_gallery('portfolio', 'slug');
-			}
-
-			?>
-		</div>
-	</div><!-- end row -->
-</div><!-- end container-fluid -->
-
-<div class="mt80"></div>
 
 <div class="container-fluid mt80" id="bio_section">
 	<div class="row">
@@ -58,6 +36,48 @@
 </div>
 
 <div class="mt80"></div>
+
+	<div class="container-fluid mt80" id="portfolio_section">
+		<div class="row">
+			<div class="col-md-12 column">
+				<h2>CV</h2>
+				<?php
+
+				if(function_exists('envira_gallery')) {
+					envira_gallery( '9' );
+
+				}
+				if (function_exists('envira_gallery')) {
+					envira_gallery('portfolio', 'slug');
+				}
+
+				?>
+			</div>
+		</div><!-- end row -->
+	</div><!-- end container-fluid -->
+
+	<div class="mt80"></div>
+
+	<div class="container-fluid mt80" id="portfolio_section">
+		<div class="row">
+			<div class="col-md-12 column">
+				<h2>Services offered</h2>
+				<?php
+
+				if(function_exists('envira_gallery')) {
+					envira_gallery( '9' );
+
+				}
+				if (function_exists('envira_gallery')) {
+					envira_gallery('portfolio', 'slug');
+				}
+
+				?>
+			</div>
+		</div><!-- end row -->
+	</div><!-- end container-fluid -->
+
+	<div class="mt80"></div>
 
 
 <?php get_footer(); ?>
