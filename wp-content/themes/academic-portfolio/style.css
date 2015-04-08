@@ -110,10 +110,10 @@ img {
  * Footer
  ************************************/
 footer {
-  background-color: black !important;
-  color: white !important;
+	background-color: black !important;
+	color: white !important;
+	text-align: right;
 }
-
 
 * {
 	margin: 0;
@@ -131,6 +131,11 @@ footer, .push {
 	height: 4em;
 }
 
+.footer-text {
+	position: relative;
+	top: 50%;
+	transform: translateY(75%);
+}
 
 /************************************
  * Navigation menu
