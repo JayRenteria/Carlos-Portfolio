@@ -58,3 +58,5 @@
 		<?php endif; ?>
 	</div><!-- end col-md-8 -->
 </div>
+
+<?php get_footer(); ?>
