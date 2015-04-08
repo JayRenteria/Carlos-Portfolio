@@ -8,6 +8,8 @@ Template Name: Contact Me
 
 <?php get_header(); ?>
 
+<div class="wrapper">
+
 <div class="container-fluid" id="contact_section">
 	<div class="row">
 		<div class="col-md-12 mt60 mb60">
@@ -53,5 +55,7 @@ Template Name: Contact Me
 		</div><!-- end container-fluid -->
 	</form>
 </div><!-- end contact_section -->
+<div class="push"></div>
+</div>
 
 <?php get_footer(); ?>

@@ -112,8 +112,25 @@ img {
 footer {
   background-color: black !important;
   color: white !important;
-  height: 30px;
 }
+
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+footer, .push {
+	height: 4em;
+}
+
 
 /************************************
  * Navigation menu
@@ -170,12 +187,12 @@ nav ul a:visited, nav ul a:focus {
   outline: none;
 }
 
-footer {
-  margin-top: 30px;
-  text-align: right;
-  background-color: white;
-  color: #337AB7;
-}
+/*footer {*/
+  /*margin-top: 30px;*/
+  /*text-align: right;*/
+  /*background-color: white;*/
+  /*color: #337AB7;*/
+/*}*/
 
 .center-width {
   align-content: center;
