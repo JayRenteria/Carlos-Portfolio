@@ -4,7 +4,11 @@
 	<div class="wrapper"> <!-- sticky footer stuff -->
 		<div class="container-fluid">
 			<div class="row">
+				<div class="col-sm-4 mt60">
+					<?php if( dynamic_sidebar('top-pic')); ?>
+				</div>
 				<div class="col-sm-8 mt60">
+
 					<?php if( have_posts()): while( have_posts()): the_post(); ?>
 						<div>
 							<article>
