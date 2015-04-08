@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+
+<div class="wrapper"> <!-- sticky footer stuff -->
 	<div class="container-fluid" id="home_section">
 		<div class="row">
 			<div class="col-md-12">
@@ -58,6 +60,9 @@
 	</div>
 
 	<div class="mt80"></div>
+
+<div class="push"></div>
+</div>
 
 
 <?php get_footer(); ?>
