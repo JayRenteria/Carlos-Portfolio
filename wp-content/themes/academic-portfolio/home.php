@@ -3,7 +3,7 @@
 
 	<div class="wrapper"> <!-- sticky footer stuff -->
 		<div class="container-fluid">
-			<div class="col-sm-8 mt30">
+			<div class="col-sm-8 mt60">
 				<?php if( have_posts()): while( have_posts()): the_post(); ?>
 					<div>
 						<article>
