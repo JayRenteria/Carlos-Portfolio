@@ -1,8 +1,8 @@
 <?php
 
 // specify the site url and the home url
-update_option('siteurl','http://jordyn.aandbae.com');
-update_option('home','http://jordyn.aandbae.com');
+update_option('siteurl','http://dev.carlosmindacochea.com');
+update_option('home','http://dev.carlosmindacochea.com');
 
 add_theme_support('menus');
 
@@ -73,22 +73,6 @@ add_action('wp_enqueue_scripts', 'aandbae_load_css');
 //add_filter( 'show_admin_bar', '__return_false' );
 
 
-
-function aandbae_envira_whitelabel( $translated_text, $source_text, $domain ) {
-	// If not in the admin, return the default string.
-	if ( ! is_admin() ) {
-		return $translated_text;
-	}
-
-	if ( strpos( $source_text, 'an Envira' ) !== false ) {
-		return str_replace( 'an Envira', '', $translated_text );
-	}
-	if ( strpos( $source_text, 'Envira' ) !== false ) {
-		return str_replace( 'Envira', '', $translated_text );
-	}
-	return $translated_text;
-}
-add_filter( 'gettext', 'aandbae_envira_whitelabel', 10, 3 );
 
 
 /*
