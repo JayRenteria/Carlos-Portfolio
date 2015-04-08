@@ -5,8 +5,8 @@
 			<div class="col-md-12">
 				<?php if( dynamic_sidebar('top-pic')); ?>
 
-				<h1>Jordyn Bernicke</h1>
-				<h3>Artist at large</h3>
+				<h1>Carlos M Indacochea</h1>
+				<h3>Academic Portfolio</h3>
 			</div>
 		</div><!-- end row -->
 	</div><!-- end container-fluid -->
