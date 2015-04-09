@@ -46,10 +46,9 @@ add_action('wp_enqueue_scripts', 'aandbae_load_js');
  * load the fonts
  */
 function aandbae_load_fonts() {
-	// h1 font (example)
-//	wp_enqueue_style('source_code_pro', 'http://fonts.googleapis.com/css?family=Source+Code+Pro:500');
+	wp_enqueue_style('Prata', 'http://fonts.googleapis.com/css?family=Prata');
 }
-//add_action('wp_print_styles', 'aandbae_load_fonts');
+add_action('wp_print_styles', 'aandbae_load_fonts');
 
 /**
  * load the css files
