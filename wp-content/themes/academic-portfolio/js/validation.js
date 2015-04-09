@@ -83,7 +83,7 @@
 				// GET or POST
 				type: "POST",
 				// where to submit data
-				url: "../index-controller.php",
+				url: "http://dev.carlosmindacochea.com/wp-content/themes/academic-portfolio/contact-controller.php",
 				// TL; DR: reformat POST data
 				data: $(form),
 				// success is an event that happens when the server replies

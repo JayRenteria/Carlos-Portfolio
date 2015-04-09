@@ -19,7 +19,7 @@ Template Name: Contact Me
 </div><!-- end container-fluid -->
 
 <div class="mb120" id="contact_form">
-	<form class="form-horizontal" role="form" id="controller" action="<?php echo get_template_directory_uri();?>/index-controller.php" method="post">
+	<form class="form-horizontal" role="form" id="controller" action="<?php echo get_template_directory_uri();?>/contact-controller.php" method="post">
 		<div class="container-fluid">
 
 			<div class="row">
