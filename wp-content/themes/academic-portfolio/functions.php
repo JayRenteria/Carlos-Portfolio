@@ -130,7 +130,7 @@ function aandbae_create_widget( $name, $id, $before_widget, $after_widget, $befo
 	register_sidebar( $args );
 }
 // change top picture
-aandbae_create_widget( 'Top Picture', 'top-pic', '', '', '', '', 'Widget for changing Top picture.');
+aandbae_create_widget( 'Blog Stats', 'top-pic', '', '', '', '', 'Widget for blog stats.');
 
 // change bio picture
 aandbae_create_widget( 'Bio Picture', 'bio-pic', '', '', '', '', 'Widget for changing Bio picture.');
@@ -140,5 +140,8 @@ aandbae_create_widget( 'Bio Text', 'bio-text', '', '', '', '', 'Widget for chang
 
 // change cv text
 aandbae_create_widget( 'CV Text', 'cv-text', '', '', '', '', 'Widget for changing CV text.');
+
+// change documents displayed
+aandbae_create_widget( 'Documents', 'docs', '', '', '', '', 'Widget for changing works documents.');
 
 ?>

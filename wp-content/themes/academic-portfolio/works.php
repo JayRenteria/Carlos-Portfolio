@@ -18,6 +18,14 @@ Template Name: Works
 			</div><!-- end row -->
 		</div><!-- end container-fluid -->
 
+		<div class="container-fluid" id="contact_section">
+			<div class="row">
+				<div>
+					<?php if( dynamic_sidebar('docs')); ?>
+				</div>
+			</div>
+		</div>
+
 		<div class="push"></div>
 	</div>
 
