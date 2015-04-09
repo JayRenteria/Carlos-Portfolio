@@ -9,7 +9,7 @@ add_theme_support('menus');
 function register_theme_menus() {
 	register_nav_menus(
 		array(
-			'top_menu'	=> __('Top Menu', 'aandbae')
+			'top_menu'	=> __('Top Menu', 'academic-portfolio')
 		)
 	);
 }
@@ -17,7 +17,7 @@ function register_theme_menus() {
 /**
  * load the js files
  */
-function aandbae_load_js() {
+function carlosm_load_js() {
 
 	// old browsers compatibility
 	global $wp_scripts;
@@ -40,35 +40,35 @@ function aandbae_load_js() {
 	wp_register_script('validation_js', get_template_directory_uri() . '/js/validation.js', array('jquery'), '', true);
 	wp_enqueue_script('validation_js');
 }
-add_action('wp_enqueue_scripts', 'aandbae_load_js');
+add_action('wp_enqueue_scripts', 'carlosm_load_js');
 
 /**
  * load the fonts
  */
-function aandbae_load_fonts() {
+function carlosm_load_fonts() {
 	wp_enqueue_style('Prata', 'http://fonts.googleapis.com/css?family=Prata');
 }
-add_action('wp_print_styles', 'aandbae_load_fonts');
+add_action('wp_print_styles', 'carlosm_load_fonts');
 
 /**
  * load the css files
  */
-function aandbae_load_css() {
+function carlosm_load_css() {
 	wp_enqueue_style('bootstrap_css', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css');
 	wp_enqueue_style('vanilla_css', get_template_directory_uri() . '/css/vanilla.css');
 	wp_enqueue_style('main_css', get_template_directory_uri() . '/style.css');
 }
-add_action('wp_enqueue_scripts', 'aandbae_load_css');
+add_action('wp_enqueue_scripts', 'carlosm_load_css');
 
 /**
  * remove the admin Word Press bar
  */
- function aandbae_remove_admin_bar() {
+ function carlosm_remove_admin_bar() {
    if (!current_user_can('administrator') && !is_admin()) {
      show_admin_bar(false);
    }
  }
- add_action('after_setup_theme', 'aandbae_remove_admin_bar');
+ add_action('after_setup_theme', 'carlosm_remove_admin_bar');
 //add_filter( 'show_admin_bar', '__return_false' );
 
 
@@ -114,7 +114,7 @@ function the_field_without_filters( $the_field=null ) {
 /*
  * Widget creation
  */
-function aandbae_create_widget( $name, $id, $before_widget, $after_widget, $before_title, $after_title, $description ) {
+function carlosm_create_widget( $name, $id, $before_widget, $after_widget, $before_title, $after_title, $description ) {
 
 	$args = array(
 		'name'          => __( $name ),
@@ -129,18 +129,18 @@ function aandbae_create_widget( $name, $id, $before_widget, $after_widget, $befo
 	register_sidebar( $args );
 }
 // change top picture
-aandbae_create_widget( 'Blog Stats', 'top-pic', '', '', '', '', 'Widget for blog stats.');
+carlosm_create_widget( 'Blog Stats', 'top-pic', '', '', '', '', 'Widget for blog stats.');
 
 // change bio picture
-aandbae_create_widget( 'Bio Picture', 'bio-pic', '', '', '', '', 'Widget for changing Bio picture.');
+carlosm_create_widget( 'Bio Picture', 'bio-pic', '', '', '', '', 'Widget for changing Bio picture.');
 
 // change bio text
-aandbae_create_widget( 'Bio Text', 'bio-text', '', '', '', '', 'Widget for changing Bio text.');
+carlosm_create_widget( 'Bio Text', 'bio-text', '', '', '', '', 'Widget for changing Bio text.');
 
 // change cv text
-aandbae_create_widget( 'CV Text', 'cv-text', '', '', '', '', 'Widget for changing CV text.');
+carlosm_create_widget( 'CV Text', 'cv-text', '', '', '', '', 'Widget for changing CV text.');
 
 // change documents displayed
-aandbae_create_widget( 'Documents', 'docs', '', '', '', '', 'Widget for changing works documents.');
+carlosm_create_widget( 'Documents', 'docs', '', '', '', '', 'Widget for changing works documents.');
 
 ?>
