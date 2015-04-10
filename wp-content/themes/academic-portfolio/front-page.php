@@ -27,8 +27,10 @@
 					<?php if( dynamic_sidebar('bio-pic')); ?>
 				</div>
 			</div>
-			<div class="col-sm-7 white">
-				<?php if( dynamic_sidebar('bio-text')); ?>
+			<div class="col-sm-7">
+				<div class="white">
+					<?php if( dynamic_sidebar('bio-text')); ?>
+				</div>
 			</div>
 			<div class="col-sm-5 hidden-xs">
 				<div class="bio-picture">
@@ -42,10 +44,10 @@
 
 	<div class="container-fluid mt80" id="portfolio_section">
 		<div class="row">
-			<div class="col-md-12 column">
+			<div class="col-sm-12">
 				<h2 class="section-header">Curriculum Vitae</h2>
 				<div class="color-bar"></div>
-				<div class="col-sm-12 white">
+				<div class="white">
 					<?php echo do_shortcode('[rb_resume id="61"]'); ?>
 				</div>
 			</div>

@@ -31,38 +31,18 @@
 
 					<?php endwhile; ?>
 
-					<div class="empty-box wp-blog-nav">
 						<?php if( get_next_posts_link()): ?>
-							<div class="postnpin-previous">
-								<i class="pin pin-blog orange-pin"></i>
-								<div class="post-it post-it-previous">
-									<h3>
-										<div class="nav-previous">
-											&lt <?php next_posts_link( 'Older posts' ); ?>
-										</div>
-									</h3>
-								</div><!-- end post-it -->
-							</div><!-- end postnpin-previous -->
-
+							&lt <?php next_posts_link( 'Older posts' ); ?>
 						<?php endif; ?>
 
 						<?php if( get_previous_posts_link()): ?>
-							<div class="postnpin-next">
-								<i class="pin pin-blog orange-pin"></i>
-								<div class="post-it post-it-next">
-									<h3>
-										<div class="nav-next">
-											<?php previous_posts_link( 'Newer posts' ); ?> &gt
-										</div>
-									</h3>
-								</div><!-- end post-it -->
-							</div><!-- end postnpin-next -->
+							<?php previous_posts_link( 'Newer posts' ); ?> &gt
 						<?php endif; ?>
-					</div><!-- end empty-box -->
 
 					<?php else: ?>
 						<p><?php _e('Sorry, no pages found.', 'wpbootstrap') ?></p>
 					<?php endif; ?>
+					
 					</div><!-- end col-md-8 -->
 				</div>
 			</div>
