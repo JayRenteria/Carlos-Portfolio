@@ -106,6 +106,7 @@ wp-content/themes/aandbae/js/bootstrap-*
 wp-content/themes/aandbae/js/bootstrap.*
 wp-content/themes/twentyfourteen-child/
 wp-content/plugins
+!contact-controller.php
 #############
 #############
 
