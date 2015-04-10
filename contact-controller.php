@@ -22,7 +22,7 @@ try {
 	// build headers
 	$headers = array();
 	$headers["To"] = $to;
-	$headers["From"] = $from . " at " . $website;
+	$headers["From"] = $from . "at" . $website;
 	$headers["Reply-To"] = $from;
 	$headers["Subject"] = "Carlos M. Indacochea Contact Form";
 	$headers["MIME-Version"] = "1.0";
