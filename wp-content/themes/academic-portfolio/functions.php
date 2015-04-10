@@ -47,6 +47,7 @@ add_action('wp_enqueue_scripts', 'carlosm_load_js');
  */
 function carlosm_load_fonts() {
 	wp_enqueue_style('Prata', 'http://fonts.googleapis.com/css?family=Prata');
+	wp_enqueue_style('Raleway', 'http://fonts.googleapis.com/css?family=Raleway');
 }
 add_action('wp_print_styles', 'carlosm_load_fonts');
 

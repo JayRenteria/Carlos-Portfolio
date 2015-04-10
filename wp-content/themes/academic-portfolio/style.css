@@ -41,12 +41,12 @@ License URI: none
  * Basic css setup
  ************************************/
 body {
-  font-family: Biko;
+  font-family: 'Raleway', 'sans-serif';
 }
 
 h1,
 h2 {
-  font-family: 'Prata';
+  font-family: 'Prata', 'sans-serif';
 }
 
 h1 {
@@ -141,7 +141,7 @@ footer, .push {
  * Navigation menu
  ************************************/
 nav {
-  background-color: black;
+  background-color: black !important;
   padding-top: 10px;
   text-align: center;
   position: fixed;
@@ -192,21 +192,12 @@ nav ul a:visited, nav ul a:focus {
   outline: none;
 }
 
-/*footer {*/
-  /*margin-top: 30px;*/
-  /*text-align: right;*/
-  /*background-color: white;*/
-  /*color: #337AB7;*/
-/*}*/
-
 .center-width {
   align-content: center;
   width: 110.5% !important;
 }
 
-#contact_form {
-  background-color: #eee;
-}
+
 #contact_form h2 {
   color: #667777;
 }
@@ -241,23 +232,6 @@ nav ul a:visited, nav ul a:focus {
     margin-top: 14.5%;
   }
 }
-#fancybox-left,
-#fancybox-right {
-  display: block !important;
-  visibility: visible !important;
-}
-
-#envira-gallery-39 .envira-gallery-item:hover {
-  opacity: .6;
-  transition: opacity .55s ease-in-out;
-  -moz-transition: opacity .55s ease-in-out;
-  -webkit-transition: opacity .55s ease-in-out;
-}
-
-.envirabox-nav {
-  outline: none !important;
-  border: none !important;
-}
 
 /************************************
  * form and inputs
@@ -274,6 +248,10 @@ textarea:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: 2px solid #667777 !important;
+}
+
+textarea.required, input.required {
+	border-color: #ff0000 !important;
 }
 
 textarea {
@@ -369,4 +347,31 @@ input[type=text] {
 .textwidget {
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+.color-bar {
+	position: relative;
+	height: 1.47em;
+	width: 15%;
+	left: -15%;
+	top: -2.8em;
+	background-color: #63848c;
+}
+
+.section-header {
+	margin-left: 10px;
+}
+
+body {
+	background-color: #eeeeee;
+}
+
+.white {
+	background-color: #ffffff;
+	padding: 4% !important;
+}
+
+.rb-section-title {
+	color: #000000 !important;
+	border-top: 0 !important;
 }

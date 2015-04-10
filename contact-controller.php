@@ -17,7 +17,7 @@ try {
 		$message = "Someone is trying to screw with you guys. Check the following IP address: " . $_SERVER['REMOTE_ADDR'];
 	}
 	// email the user with an activation message
-	$to = "jay@jayrenteria.com";
+	$to = "alonso@hermesdevelopment.com";
 	$from = $email;
 	// build headers
 	$headers = array();

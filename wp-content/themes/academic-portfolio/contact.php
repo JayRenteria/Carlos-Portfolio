@@ -25,10 +25,10 @@ Template Name: Contact Me
 			<div class="row">
 				<div class="form-group mt40">
 					<div class="col-sm-4">
-						<input class="form-control" id="name" name="name" type="text" placeholder="Name">
+						<input class="form-control" id="name" name="name" type="text" placeholder="Name" required>
 					</div>
 					<div class="col-sm-4">
-						<input class="form-control" id="email" name="email" type="text" placeholder="Email">
+						<input class="form-control" id="email" name="email" type="text" placeholder="Email" required>
 					</div>
 					<div class="col-sm-4">
 						<input class="form-control" id="website" name="website" type="text" placeholder="Website">
@@ -38,8 +38,8 @@ Template Name: Contact Me
 
 			<div class="row">
 				<div class="col-sm-12">
-					<div class="form-group mt20">
-						<textarea class="form-control" name="message" id="message" rows="10" placeholder="Message"></textarea>
+					<div class="form-group">
+						<textarea class="form-control" name="message" id="message" rows="10" placeholder="Message" required></textarea>
 					</div>
 				</div>
 			</div>
