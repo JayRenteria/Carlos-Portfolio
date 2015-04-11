@@ -97,6 +97,10 @@ img {
   #bio_section .bio-picture img {
     border: 14px solid white;
   }
+
+  #bio_section .bio-picture .textwidget {
+    margin-right: -15px;
+  }
 }
 #bio_section .bio-picture img {
   border: 14px solid white;
