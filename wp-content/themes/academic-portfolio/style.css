@@ -93,11 +93,13 @@ img {
   text-align: center;
 }
 
-/*#bio_section .bio-picture .textwidget {
-  margin-right: -15px;
-}*/
-
+@media screen and (min-width: 768px) {
+  #bio_section .bio-picture img {
+    border: 14px solid white;
+  }
+}
 #bio_section .bio-picture img {
+  border: 14px solid white;
   width: 100%;
 }
 
