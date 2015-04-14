@@ -13,7 +13,8 @@ Template Name: Works
 		<div class="container-fluid" id="contact_section">
 			<div class="row">
 				<div class="col-md-12 mt60 mb60">
-					<h2>Works</h2>
+					<h2 class="section-header">Works</h2>
+					<div class="color-bar"></div>
 				</div>
 			</div><!-- end row -->
 		</div><!-- end container-fluid -->
