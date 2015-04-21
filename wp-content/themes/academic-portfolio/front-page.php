@@ -49,7 +49,9 @@
 					<?php if( dynamic_sidebar('bio-pic')); ?>
 				</div>
 			</div>
-			<div class="col-sm-7">
+		</div>
+		<div class="row">
+			<div class="col-sm-7 mt20">
 				<div class="white">
 					<?php if( dynamic_sidebar('bio-text')); ?>
 				</div>
