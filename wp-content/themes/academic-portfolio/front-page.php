@@ -22,13 +22,6 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 visible-xs">
-				<div class="bio-picture">
-					<?php if( dynamic_sidebar('bio-pic')); ?>
-				</div>
-			</div>
-		</div>
-		<div class="row">
 			<div class="col-sm-7">
 				<div class="white">
 					<?php if( dynamic_sidebar('bio-text')); ?>
@@ -51,21 +44,14 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 visible-xs">
+			<div class="col-sm-5">
 				<div class="bio-picture">
 					<?php if( dynamic_sidebar('bio-pic')); ?>
 				</div>
 			</div>
-		</div>
-		<div class="row">
 			<div class="col-sm-7">
 				<div class="white">
 					<?php if( dynamic_sidebar('bio-text')); ?>
-				</div>
-			</div>
-			<div class="col-sm-5 hidden-xs">
-				<div class="bio-picture">
-					<?php if( dynamic_sidebar('bio-pic')); ?>
 				</div>
 			</div>
 		</div>
