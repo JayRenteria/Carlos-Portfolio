@@ -12,7 +12,13 @@ Template Name: Contact Me
 
 <div class="container-fluid" id="contact_section">
 	<div class="row">
-		<div class="col-md-12 mt60 mb60">
+<!--		desktop view-->
+		<div class="col-md-12 mt60 mb60 hidden-xs">
+			<h2 class="section-header">Contact me</h2>
+			<div class="color-bar"></div>
+		</div>
+<!--		mobile view-->
+		<div class="col-md-12 mt60 visible-xs">
 			<h2 class="section-header">Contact me</h2>
 			<div class="color-bar"></div>
 		</div>
@@ -23,7 +29,7 @@ Template Name: Contact Me
 	<form class="form-horizontal" role="form" id="controller" action="<?php echo get_template_directory_uri();?>/contact-controller.php" method="post">
 		<div class="container-fluid">
 
-			<div class="row">
+			<div class="row hidden-xs">
 				<div class="form-group mt40">
 					<div class="col-sm-4">
 						<input class="form-control" id="name" name="name" type="text" placeholder="Name" required>
@@ -36,6 +42,21 @@ Template Name: Contact Me
 					</div>
 				</div>
 			</div>
+
+			<div class="row visible-xs">
+				<div class="form-group">
+					<div class="col-sm-4">
+						<input class="form-control" id="name" name="name" type="text" placeholder="Name" required>
+					</div>
+					<div class="col-sm-4">
+						<input class="form-control" id="email" name="email" type="text" placeholder="Email" required>
+					</div>
+					<div class="col-sm-4">
+						<input class="form-control" id="website" name="website" type="text" placeholder="Website">
+					</div>
+				</div>
+			</div>
+
 
 			<div class="row">
 				<div class="col-sm-12">

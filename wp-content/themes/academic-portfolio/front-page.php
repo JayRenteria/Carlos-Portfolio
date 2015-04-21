@@ -11,10 +11,10 @@
 		</div><!-- end row -->
 	</div><!-- end container-fluid -->
 
-	<div class="mt80"></div>
+	<div class="mt80 hidden-xs"></div>
 
-
-	<div class="container-fluid mt80" id="bio_section">
+<!--	desktop view-->
+	<div class="container-fluid mt80 hidden-xs" id="bio_section">
 		<div class="row">
 			<div class="col-sm-12">
 				<h2 class="section-header">Bio</h2>
@@ -27,6 +27,37 @@
 					<?php if( dynamic_sidebar('bio-pic')); ?>
 				</div>
 			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-7">
+				<div class="white">
+					<?php if( dynamic_sidebar('bio-text')); ?>
+				</div>
+			</div>
+			<div class="col-sm-5 hidden-xs">
+				<div class="bio-picture">
+					<?php if( dynamic_sidebar('bio-pic')); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--	mobile view-->
+	<div class="container-fluid visible-xs" id="bio_section">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="section-header">Bio</h2>
+				<div class="color-bar"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 visible-xs">
+				<div class="bio-picture">
+					<?php if( dynamic_sidebar('bio-pic')); ?>
+				</div>
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-sm-7">
 				<div class="white">
 					<?php if( dynamic_sidebar('bio-text')); ?>
