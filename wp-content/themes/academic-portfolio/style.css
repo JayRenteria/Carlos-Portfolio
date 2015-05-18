@@ -353,8 +353,8 @@ input[type=text] {
 .color-bar {
 	position: relative;
 	height: 1.47em;
-	width: 15%;
-	left: -15%;
+	width: 25%;
+	left: -25%;
 	top: -2.8em;
 	background-color: #63848c;
 }
@@ -382,8 +382,4 @@ body {
 	height: 34px;
 	position: relative;
 	top: 0.6px;
-}
-
-#searchsubmit {
-
 }

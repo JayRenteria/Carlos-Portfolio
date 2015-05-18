@@ -1,27 +1,33 @@
 <?php get_header(); ?>
 
-<div class="container-fluid mt60">
+<div class="container-fluid mt80">
   <div class="row">
     <div class="col-sm-8">
       <?php if( have_posts()): while( have_posts()): the_post(); ?>
         <article <?php post_class(); ?>>
-          <h2><?php the_title(); ?></h2>
-          <p class="post-credits">
-            <?php echo get_avatar( get_the_author_meta( 'ID' ), 24 ); ?>
-            By <?php the_author(); ?> 
-            on <?php echo the_time('l, F jS, Y') ?>
-            in <?php the_category( ', ' ); ?>, 
-            <a href="<?php comments_link() ?>"><?php comments_number(); ?></a>
-          </p>
-          <div class="hr"></div>
-          <p><?php the_content(); ?></p>
-          <div class="hr"></div>
+          <h2 class="section-header"><?php the_title(); ?></h2>
+          <div class="color-bar"></div>
+
+          <div class="white">
+            <p class="post-credits">
+              <?php echo get_avatar( get_the_author_meta( 'ID' ), 24 ); ?>
+              By <?php the_author(); ?> 
+              on <?php echo the_time('l, F jS, Y') ?>
+              in <?php the_category( ', ' ); ?>, 
+              <a href="<?php comments_link() ?>"><?php comments_number(); ?></a>
+            </p>
+            <div class="hr"></div>
+            <p><?php the_content(); ?></p>
+            <div class="hr"></div>
+          </div><!-- end white -->
           <?php comments_template(); ?>
+          
         </article>
 
       <?php endwhile; else: ?>
         <p><?php _e('Sorry, no pages found.', 'wpbootstrap') ?></p>
       <?php endif; ?>
+      
     </div><!-- end col-sm-8 -->
 
     <div id="sidebar" class="col-sm-4">
@@ -40,9 +46,6 @@
       </div>
       <?php get_sidebar( 'blog' ); ?>
     </div><!-- end col-sm-4 -->
-        
-        
-    </div><!-- end col-md-10 -->
   </div><!-- end row-fluid -->
 </div><!-- end container-fluid -->
 
