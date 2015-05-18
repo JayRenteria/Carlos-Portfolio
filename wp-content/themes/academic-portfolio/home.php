@@ -7,7 +7,7 @@
 			<div class="col-sm-8 mt60 post-list">
 				<?php if( have_posts()): while( have_posts()): the_post(); ?>
 					<div>
-						<article class="white mb30">
+						<div class="white mb30">
 							<h2 class="blog-link">
 								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 							</h2>
@@ -22,7 +22,7 @@
 							<p class="blog-link">
 								<a href="<?php the_permalink(); ?>"><?php the_excerpt_without_filters(); ?></a>
 							</p>
-						</article>
+						</div>
 					</div><!-- end dotted-box -->
 
 				<?php endwhile; ?>
@@ -41,7 +41,12 @@
 			</div><!-- end col-md-8 -->
 
 			<div class="col-sm-4 mt60">
-				<?php if( dynamic_sidebar('top-search')); ?>
+				<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <div>
+            <input type="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Search', 'submit button' ); ?>" />
+            <span><input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" /></span>
+          </div>
+        </form>
 				<div class="white mt30">
           <?php if( dynamic_sidebar('blog-stats')); ?>
         </div>

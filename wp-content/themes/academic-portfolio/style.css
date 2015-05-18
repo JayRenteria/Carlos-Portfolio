@@ -389,6 +389,27 @@ body {
   display: none;
 }
 
-#sidebar h2 {
+article h2:first-child {
+  margin-top: 0;
+}
 
+/************************************
+ * search 
+ ************************************/
+.searchform {
+  overflow: hidden;
+}
+
+.searchform input[type=text] {
+  width: 100%;
+}
+
+.searchform input[type=submit] {
+  float: right;
+}
+
+.searchform span {
+  display: block;
+  overflow: hidden;
+  padding-right: 2%;
 }

@@ -34,7 +34,12 @@
       </div><!-- end col-sm-8 -->
 
       <div class="col-sm-4">
-        <?php if( dynamic_sidebar('top-search')); ?>
+        <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <div>
+            <input type="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Search', 'submit button' ); ?>" />
+            <span><input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" /></span>
+          </div>
+        </form>
         <div class="white mt30">
           <?php if( dynamic_sidebar('blog-stats')); ?>
         </div>
