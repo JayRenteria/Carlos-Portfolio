@@ -34,7 +34,7 @@
       </div><!-- end col-sm-8 -->
 
       <div class="col-sm-4 mt20">
-        <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+        <form role="search" method="get" id="searchform" class="searchform hidden-xs" action="<?php echo esc_url( home_url( '/' ) ); ?>">
           <div>
             <input type="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Search', 'submit button' ); ?>" />
             <span><input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" /></span>

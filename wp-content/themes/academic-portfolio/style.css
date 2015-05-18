@@ -76,6 +76,10 @@ h3 {
   text-align: center;
 }
 
+h2 a, h2 a:hover, h2 a:focus, h2 a:visited, h2 a:active {
+  color: black;
+}
+
 a {
   text-decoration: none !important;
   color: #63848c;
@@ -389,8 +393,8 @@ body {
   display: none;
 }
 
-h2 a, h2 a:hover, h2 a:focus, h2 a:visited, h2 a:active {
-  color: black;
+.post-list .post:last-child {
+  margin-bottom: 60px
 }
 
 /************************************
@@ -421,6 +425,17 @@ h2 a, h2 a:hover, h2 a:focus, h2 a:visited, h2 a:active {
   margin-bottom: 30px;
 }
 
+.academic-docs .textwidget > p:last-child {
+  margin-bottom: 60px !important;
+}
+
 .document-icon {
   margin-right: 20px !important;
+}
+
+/************************************
+ * comments 
+ ************************************/
+#commentform #submit {
+  margin-bottom: 60px !important;
 }

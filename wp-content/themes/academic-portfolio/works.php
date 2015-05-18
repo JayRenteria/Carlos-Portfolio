@@ -19,7 +19,7 @@ Template Name: Works
 			</div><!-- end row -->
 
 			<div class="row">
-				<div>
+				<div class="academic-docs">
 					<?php if( dynamic_sidebar('docs')); ?>
 				</div>
 			</div>
