@@ -40,7 +40,7 @@
             <span><input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" /></span>
           </div>
         </form>
-        <div class="white mt30">
+        <div class="white mt30 mb60">
           <?php if( dynamic_sidebar('blog-stats')); ?>
         </div>
       </div><!-- end col-sm-4 -->
