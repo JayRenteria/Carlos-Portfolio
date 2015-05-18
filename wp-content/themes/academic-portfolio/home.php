@@ -39,13 +39,16 @@
 					<p><?php _e('Sorry, no pages found.', 'wpbootstrap') ?></p>
 				<?php endif; ?>
 			</div><!-- end col-md-8 -->
-			
+
 			<div class="col-sm-4 mt60">
-				<?php if( dynamic_sidebar('top-pic')); ?>
+				<?php if( dynamic_sidebar('top-search')); ?>
+				<div class="white mt30">
+          <?php if( dynamic_sidebar('blog-stats')); ?>
+        </div>
 			</div>
 		</div><!-- end row -->
 	</div><!-- end container-fluid -->	
-	<div class="push"></div>
-</div>
+</div><!-- end wrapper -->
+<div class="push"></div>
 
 <?php get_footer(); ?>

@@ -129,8 +129,12 @@ function carlosm_create_widget( $name, $id, $before_widget, $after_widget, $befo
 
 	register_sidebar( $args );
 }
-// change top picture
-carlosm_create_widget( 'Blog Stats', 'top-pic', '', '', '', '', 'Widget for blog stats.');
+
+// search widget
+carlosm_create_widget( 'Top search', 'top-search', '', '', '', '', 'Widget for the top search.');
+
+// blog stats widget
+carlosm_create_widget( 'Blog Stats', 'blog-stats', '', '', '', '', 'Widget for blog stats.');
 
 // change bio picture
 carlosm_create_widget( 'Bio Picture', 'bio-pic', '', '', '', '', 'Widget for changing Bio picture.');
