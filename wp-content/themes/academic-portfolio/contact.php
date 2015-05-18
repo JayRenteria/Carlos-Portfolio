@@ -12,20 +12,14 @@ Template Name: Contact Me
 
 <div class="container-fluid" id="contact_section">
 	<div class="row">
-<!--		desktop view-->
-		<div class="col-md-12 mt60 mb60 hidden-xs">
-			<h2 class="section-header">Contact me</h2>
-			<div class="color-bar"></div>
-		</div>
-<!--		mobile view-->
-		<div class="col-md-12 mt60 visible-xs">
+		<div class="col-md-12 mt60 mb30">
 			<h2 class="section-header">Contact me</h2>
 			<div class="color-bar"></div>
 		</div>
 	</div><!-- end row -->
 </div><!-- end container-fluid -->
 
-<div class="mb120" id="contact_form">
+<div class="mb60" id="contact_form">
 	<form class="form-horizontal" role="form" id="controller" action="<?php echo get_template_directory_uri();?>/contact-controller.php" method="post">
 		<div class="container-fluid">
 
