@@ -388,10 +388,6 @@ body {
 #respond h3 {
   display: none;
 }
-/*
-article h2:first-child {
-  margin-top: 0;
-}*/
 
 h2 a, h2 a:hover, h2 a:focus, h2 a:visited, h2 a:active {
   color: black;
@@ -416,4 +412,15 @@ h2 a, h2 a:hover, h2 a:focus, h2 a:visited, h2 a:active {
   display: block;
   overflow: hidden;
   padding-right: 2%;
+}
+
+/************************************
+ * works 
+ ************************************/
+.document-icon-wrapper {
+  margin-bottom: 30px;
+}
+
+.document-icon {
+  margin-right: 20px !important;
 }
