@@ -269,18 +269,18 @@ textarea.form-control:focus {
 }
 
 input[type=text] {
-  margin-top: 20px;
   height: 40px;
+}
+
+input[type=text],
+textarea {
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
   input[type=text],
   textarea {
     max-width: 100%;
-  }
-
-  input[type=text] {
-    margin-top: 0;
   }
 }
 .btn {
@@ -355,6 +355,12 @@ input[type=text] {
 	padding-right: 15px;
 }
 
+
+
+
+/************************************
+ * front page
+ ************************************/
 .color-bar {
 	position: relative;
 	height: 1.47em;
@@ -387,6 +393,8 @@ body {
 	height: 34px;
 	position: relative;
 	top: 0.6px;
+  margin: 0;
+  padding-left: 15px 
 }
 
 #respond h3 {
@@ -400,6 +408,7 @@ body {
 /************************************
  * search 
  ************************************/
+
 .searchform {
   overflow: hidden;
 }
@@ -415,7 +424,12 @@ body {
 .searchform span {
   display: block;
   overflow: hidden;
-  padding-right: 2%;
+}
+
+@media screen and (min-width: 768px) {
+  .searchform span {
+    padding-right: 2%;
+  }
 }
 
 /************************************
@@ -438,4 +452,8 @@ body {
  ************************************/
 #commentform #submit {
   margin-bottom: 60px !important;
+}
+
+#commentform p {
+  margin: 0;
 }

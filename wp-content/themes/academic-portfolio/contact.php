@@ -10,21 +10,21 @@ Template Name: Contact Me
 
 <div class="wrapper">
 
-<div class="container-fluid" id="contact_section">
+<div class="container-fluid mt80 mb30" id="contact_section">
 	<div class="row">
-		<div class="col-md-12 mt60 mb30">
+		<div class="col-md-12">
 			<h2 class="section-header">Contact me</h2>
 			<div class="color-bar"></div>
 		</div>
 	</div><!-- end row -->
 </div><!-- end container-fluid -->
 
-<div class="mb60" id="contact_form">
+<div id="contact_form">
 	<form class="form-horizontal" role="form" id="controller" action="<?php echo get_template_directory_uri();?>/contact-controller.php" method="post">
 		<div class="container-fluid">
 
 			<div class="row hidden-xs">
-				<div class="form-group mt40">
+				<div class="form-group">
 					<div class="col-sm-4">
 						<input class="form-control" id="name" name="name" type="text" placeholder="Name" required>
 					</div>

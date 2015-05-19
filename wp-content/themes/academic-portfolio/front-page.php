@@ -2,7 +2,7 @@
 
 <div class="background">
 
-	<div class="container-fluid" id="home_section">
+	<div class="container-fluid mt80" id="home_section">
 		<div class="row">
 			<div class="col-md-12">
 				<h1>Carlos M. Indacochea</h1>

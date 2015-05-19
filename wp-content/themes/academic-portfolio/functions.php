@@ -35,8 +35,8 @@ function carlosm_load_js() {
 	wp_enqueue_script('jquery-validation-additional', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/additional-methods.min.js', array('jquery'), '', false);
 
 	// custom js files
-	wp_register_script('main_js', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true);
-	wp_enqueue_script('main_js');
+	// wp_register_script('main_js', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true);
+	// wp_enqueue_script('main_js');
 	wp_register_script('validation_js', get_template_directory_uri() . '/js/validation.js', array('jquery'), '', true);
 	wp_enqueue_script('validation_js');
 }
